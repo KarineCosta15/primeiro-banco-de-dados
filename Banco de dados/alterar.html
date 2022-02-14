@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acervo da Biblioteca</title>
+
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <p class= area-inicio>
+        <a href= "home.html"class= "btn btn-fundo" tabindex="_self">Página Principal</a>
+        <a href= "cadacervo.html"class= "btn btn-fundo" tabindex="_self">Cadastro Acervo</a>
+        <a href= "listalivros.php"class= "btn btn-fundo" tabindex="_self">Listagem do Acervo</a>
+    </p> 
+
+    <h1 class= area-inicio2>Editar Acervo</h1>
+
+    <form action="inseriralt.php" method="POST">
+        <div id="area">
+            <label for="">Identicador do Livro:</label>
+            <input name="idlivro" maxlength = "40">
+        </div>
+        <div id="area">
+            <label for="">Título do Livro:</label>
+            <input type="text"  name="nomelivro"  maxlength = "60"/>
+        </div>
+        <div id="area">
+            <label for="">Nome do Autor:</label>
+            <input type="text"  name="nomeautor" maxlength = "60"/>
+        </div>
+        <div id="area">
+            <label for="">Ano do Livro:</label>
+            <input type="number"  name="anolivro"  maxlength = "4"/>
+        </div>
+        <div id="area">
+            <label for="">Preço do Livro:</label>
+            <input type="number"  name="precolivro" maxlength = "10"/>
+        </div>
+        <div id="area">
+            <label for="">Quantidade:</label>
+            <input type="number"  name="quant" maxlength = "4"/>
+        </div>
+        <div id="area">
+            <label for="">Editora:</label>
+            <input name="editora" maxlength = "40">
+        </div>
+        <div class="area-inicio3">
+            <button class="btn btn-fundo">Alterar Livro</button>
+        </div>
+    </form>
+    
+</body>
+</html>
